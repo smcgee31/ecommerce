@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<!-- ****  PLEASE SET YOUR APP NAME HERE IF APPROPRIATE  ****     -->
+<html ng-app='XX_newAPPnameHere_XX'>
+    <head>
+        <title>RoadRunner</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" type="text/css" href="style.css">
+        <link rel="stylesheet" type="text/css" href="normalize.css">
+
+    </head>
+    <body>
+
+        <div id="wrapper">
+
+    		<header id="header">
+                <ul>
+                    <li><a ui-sref="home">HOME</a></li>
+                    <li><a ui-sref="admin">ADMIN</a></li>
+                </ul>
+    		</header><!-- #header -->
+
+    		<div id="content">
+                <div class="viewContainer">
+                    <div ui-view></div>
+                </div>
+
+
+
+
+
+
+    		</div><!-- #content -->
+
+    		<div id="footer">
+                <p>
+                    AWESOME FOOTER HERE!!!
+                </p>
+    		</div><!-- #footer -->
+
+    	</div><!-- #wrapper -->
+
+
+<!-- ****  PLEASE CHECK THE FOLLOWING SCRIPTS TO BE SURE TO HAVE ALL YOU LINKS  **** -->
+<!-- ****  DO YOU HAVE THEM ALL? JQUERY? ANGULAR? ETC, ETC, ETC.  **** -->
+        <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.9/angular.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/angular-ui-router/0.2.18/angular-ui-router.js"></script>
+        <script src="homeApp.js"></script>
+        <script src="mainCtrl.js"></script>
+        <!-- <script src="XXX_newServiceNameHere_XX.js"></script> -->
+
+    </body>
+</html>
