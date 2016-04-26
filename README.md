@@ -154,7 +154,17 @@ app.post('/api/products', function(req, res){
 
 ### Get All Products
 
-####
+I have commented this part out because it is CLEARLY a section of its own.
+[lines 167 - 177]
+notice the hash tags (I didn't put those there) that seem to delineate a
+section and at the bottom of the section is a "TESTPOINT" which seems to
+mean "stop here and test your code."
+However, this is not anywhere close to the end of this section where we
+will be "completing the GET api endpoint." When I read this part I
+stopped and struggled with completing the GET api endpoint for over half
+an hour before overhearing and realizing that I should just keep reading
+past the "TESTPOINT"... way past.
+<!-- ####
 
 Now you'll connect your Express API to Mongo. After each query/action to Mongo is complete, we'll send a response back to the client.
 
@@ -164,13 +174,17 @@ For each of these steps we're going to use our db object we made when we set up 
 
 **TESTPOINT**: At this point you should be able to hit the endpoint and have it touching your database. Use Postman to hit your endpoint.  You should be able to get a response back in Postman, and be able to see your data being returned from your database.  You can check your database via the terminal or [MongoChef](http://3t.io/mongochef/).
 
-####
-
+#### -->
+This seems to be a pattern here... don't trust what you are reading, just
+keep going and later on down the README you might get something working
+once you get to that point. If you don't you won't know how far back you
+went wrong.
 
 **Mongo Query**
 
 A find multiple items query is in this format :
 `db.[collectionName].find({}, function(err, response){})`
+
 
 The empty object means we have no criteria. and we just want all the records in [collectionName].  
 
