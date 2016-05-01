@@ -1,0 +1,29 @@
+<div class="" >
+    <br />
+
+    <div class="inputAreas">
+        <input ng-model="newProduct.title" type="text" name="title" placeholder="Title...">
+        <input ng-model="newProduct.description" type="text" name="description" placeholder="Description...">
+        <input ng-model="newProduct.price" type="text" name="price" placeholder="Price...">
+        <button type="button" name="addProduct" ng-click="addProduct(newProduct)">Add Item</button>
+    </div>
+    <div class="inputAreas">
+        <input ng-model="selected.title" type="text" name="title" placeholder="Title...">
+        <input ng-model="selected.description" type="text" name="description" placeholder="Description...">
+        <input ng-model="selected.price" type="text" name="price" placeholder="Price...">
+        <button type="button" name="updateProduct" ng-click="updateProduct(selected)">Update</button>
+        <button type="button" name="clear" ng-click="clearSelected()">Clear</button>
+    </div>
+
+
+    <div class="productsContainer">
+        <div class="productCard" ng-class="{selected: product === selected}" ng-repeat="product in products" ng-click="select(product)">
+            <button type="button" name="deleteProduct" ng-click="deleteProduct(product)">X</button> {{product.title}} | {{product.description}} | ${{product.price}}
+        </div>
+
+    </div>
+
+
+
+
+</div>

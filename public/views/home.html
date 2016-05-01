@@ -1,5 +1,5 @@
-<div ng-repeat="item in items">
-    {{item.name}}
-    {{item.size}}
-    ${{item.price}}
+<div class="productsContainer">
+    <div class="productCard" ng-repeat="product in products">
+        {{product.title}} | {{product.description}} | ${{product.price}}
+    </div>
 </div>

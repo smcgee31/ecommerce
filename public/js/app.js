@@ -1,19 +1,22 @@
-angular.module('homeApp', ['ui.router'])
+
+// set app name, call ui.router, and chain config for views
+angular.module('app', ['ui.router'])
 .config(function($stateProvider, $urlRouterProvider) {
+
+    $urlRouterProvider.otherwise('/');
 
     $stateProvider
     .state('home', {
         url: '/',
         templateUrl: 'views/home.html',
-        controller: 'homeCtrl'
+        controller: 'mainCtrl'
     })
-    .state('about', {
+    .state('admin', {
         url: '/admin',
         templateUrl: 'views/admin.html',
-        controller: 'adminCtrl'
+        controller: 'mainCtrl'
     });
 
-    $urlRouterProvider.otherwise('/');
 
 
 });
